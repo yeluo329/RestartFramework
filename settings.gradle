@@ -1,5 +1,8 @@
 pluginManagement {
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -14,10 +17,13 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
         google()
         mavenCentral()
     }
 }
 
-rootProject.name = "framework_study"
+rootProject.name = "test_project"
 include ':app'
